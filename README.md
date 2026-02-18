@@ -86,14 +86,6 @@ When your code runs and produces the expected output, stop. You're done. Don't c
 
 See `PROGRESS.md` for a checklist of all sessions. Mark them off as you complete them.
 
-## Technical Notes
-
-- This is a plain Java project (no Maven, no Gradle)
-- Uses Java 17
-- No external dependencies required
-- Default package (no package declarations)
-- Only `02-assignments` should be marked as Sources Root in IntelliJ
-
 ## Getting Help
 
 Each session has a README.md with:
