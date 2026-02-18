@@ -22,6 +22,8 @@ Get comfortable running simple Java code interactively, seeing output, and obser
 6. Press Enter after each snippet
 7. Observe the output immediately
 
+**Plan B (Scratch File):** Don't want to install the plugin? Right-click in Project view → **New → Scratch File → Java**, then copy/paste code snippets there and run them.
+
 ### Example JShell workflow:
 
 ```

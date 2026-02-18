@@ -20,6 +20,8 @@ Learn to compare strings correctly and handle null values safely.
 3. Copy code snippets from the file (remove `//` and `TODO:`)
 4. Paste them into JShell and observe results
 
+**Plan B (Scratch File):** Use **New → Scratch File → Java** instead if you prefer
+
 ## Expected Output
 
 - `true` for string equality checks

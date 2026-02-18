@@ -19,9 +19,9 @@ Download and install **IntelliJ IDEA Community Edition** (it's free). When you f
 3. Navigate to this project folder and click **Open**
 4. If prompted to trust the project, click **Trust Project**
 
-### Step 3: Install JShell Console Plugin
+### Step 3: Install JShell Console Plugin (Optional)
 
-Sessions 1-3 use JShell for interactive practice.
+Sessions 1-3 work best with JShell for interactive practice.
 
 1. Go to **File → Settings → Plugins** (or **IntelliJ IDEA → Preferences → Plugins** on Mac)
 2. Click **Marketplace**
@@ -29,6 +29,21 @@ Sessions 1-3 use JShell for interactive practice.
 4. Click **Install** and restart when prompted
 
 You can now access JShell via **Tools → JShell Console...**
+
+**Plan B:** If you prefer to skip the JShell plugin, use an IntelliJ Scratch file instead:
+- Right-click anywhere in the Project view
+- Select **New → Scratch File → Java**
+- Copy/paste code snippets and run them there
+
+### First Run
+
+Ready to start? Here's what to do:
+
+1. In the Project view (left side), open: `02-assignments/phase-01-safety/session-01-sandbox`
+2. Open the `S01_Sandbox.java` file
+3. Read the session `README.md` for instructions
+4. For Sessions 1-3: Copy code to JShell Console (or Scratch file)
+5. For Sessions 4+: Click the green ▶ button next to `main(...)`
 
 ## Project Structure
 

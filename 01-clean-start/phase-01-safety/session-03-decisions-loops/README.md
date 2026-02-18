@@ -20,6 +20,8 @@ Use if/else statements and loops to evaluate multiple test cases.
 4. For the List example, paste the import statement first
 5. Observe output for each snippet
 
+**Plan B (Scratch File):** Use **New → Scratch File → Java** instead if you prefer
+
 ## Expected Output
 
 - "Eligible" or "Not eligible" for a single age
