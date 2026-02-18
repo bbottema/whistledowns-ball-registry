@@ -71,7 +71,8 @@ Each of the three folders contains identical phase structure:
 - **Phase 01 – Safety** (Sessions 1-5): Variables, strings, decisions, loops, and basic methods
 - **Phase 02 – Enter the Ton** (Sessions 6-8): Classes, interfaces, and orchestration
 - **Phase 03 – Test Engine** (Sessions 9-10): Assertions and JUnit preview
-- **Phase 04 – Expansion Pack** (Sessions 11-13): Maps, diagnostics, and test harnesses
+    - **Note:** This concludes the core basics, and you can choose to stop here
+- **Phase 04 – Expansion Pack** (Sessions 11-13, optional): Maps, diagnostics, and test harnesses
 
 ## How to Run a Session
 
