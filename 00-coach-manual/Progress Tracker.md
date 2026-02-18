@@ -55,6 +55,11 @@ Use this sheet to track completed sessions. Check off each session as you finish
 | ☐ | **Session 11**: Map & Reputation | __________ | Data-driven rules with Maps |
 | ☐ | **Session 12**: Failure Reasons | __________ | Diagnostic output, test reporting |
 | ☐ | **Session 13**: Test Run Harness | __________ | Arrange-Act-Assert pattern |
+| ☐ | **Session 14**: Structured Result | __________ | Returning rich objects |
+| ☐ | **Session 15**: CSV Ledger | __________ | Loading test data from files |
+| ☐ | **Session 16**: Parameterized Cases | __________ | Data-driven testing pattern |
+| ☐ | **Session 17**: Human Readable Reports | __________ | Formatted output |
+| ☐ | **Session 18**: Season Statistics | __________ | Aggregation & analysis |
 
 **Phase 04 Complete:** ☐
 **Coach Signature:** _____________________
@@ -63,7 +68,7 @@ Use this sheet to track completed sessions. Check off each session as you finish
 
 ## Final Notes
 
-**Total Sessions Completed:** _____ / 13
+**Total Sessions Completed:** _____ / 18
 
 **Strengths:**
 

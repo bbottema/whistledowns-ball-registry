@@ -16,6 +16,11 @@
       <sourceFolder url="file://$MODULE_DIR$/02-assignments/phase-04-expansion-pack/session-11-map-reputation" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/02-assignments/phase-04-expansion-pack/session-12-failure-reasons" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/02-assignments/phase-04-expansion-pack/session-13-test-run-harness" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/02-assignments/phase-04-expansion-pack/session-14-structured-result" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/02-assignments/phase-04-expansion-pack/session-15-csv-ledger" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/02-assignments/phase-04-expansion-pack/session-16-parameterized-cases" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/02-assignments/phase-04-expansion-pack/session-17-human-readable-reports" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/02-assignments/phase-04-expansion-pack/session-18-season-statistics" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
