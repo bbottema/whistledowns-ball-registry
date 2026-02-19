@@ -1,20 +1,53 @@
-# Session 05 – Eligibility Method
+# Session 05 – Your first reusable check (a method)
 
-## Goal
+## What you’ll get out of this
 
-Write a method that encodes Lady Whistledown's eligibility rules.
+By the end of this session you can:
 
-## What You'll Do
+- write a method that returns `true`/`false` (hello, reusable validation)
+- treat the method like a tiny “business rule” you can test with multiple inputs
+- run the program and read the output as a mini test report
 
-1. Create an `isEligible` method that checks age and family name
-2. Test it with different inputs
+## Concepts (quick read, then do the TODOs)
 
-## How to Run It
+### A method is a named rule
 
-1. Open `S05_EligibilityMethod.java`
-2. Right-click and run it
+You’re going to implement:
 
-## Expected Output
+```java
+static boolean isEligible(int age, String familyName)
+```
+
+Think of it as: “given this input, what should the outcome be?”
+
+### Return `true/false` like a test result
+
+- `true` means: eligible
+- `false` means: not eligible
+
+For this session, the rule is:
+
+- age must be **18+**
+- family name must be **not null and not blank**
+
+## Start here
+
+1. Open `S05_Assignment.java`.
+2. Follow the TODO blocks **in order**.
+
+## How to run (IntelliJ)
+
+1. Uncomment (or write) the `isEligible(...)` method.
+2. Uncomment the `System.out.println(...)` calls in `main`.
+3. Click the green ▶ next to `main(...)`.
+
+## Plan B
+
+Right-click inside the file and choose **Run 'S05_Assignment.main()'**.
+
+## What “success” looks like
+
+You should see exactly:
 
 ```
 true
@@ -23,18 +56,17 @@ false
 false
 ```
 
-## If You Get Stuck
+## Troubleshooting
 
-**"Cannot resolve symbol"**
-- Check the spelling of your method name
-- Make sure parameters match when calling
+### “cannot resolve symbol isEligible”
 
-**Logic errors**
-- Age must be >= 18
-- Family name must not be null or blank
+- The method is still commented out, or the name/signature doesn’t match.
+- Fix: ensure the method name is `isEligible` and it has `(int age, String familyName)`.
 
-## Coach Notes
+### Output doesn’t match
 
-Methods let you package logic and reuse it. This is your first reusable validation function.
+Sanity-check the rule:
 
-Before running, try predicting the output. This builds test intuition: what should happen given these inputs?
+- `age < 18` → `false`
+- `familyName == null` → `false`
+- `familyName.isBlank()` → `false`

@@ -1,4 +1,4 @@
-// TODO: Implement the AgeRule
+// TODO 2: Implement the AgeRule
 // class S07_AgeRule implements S07_EtiquetteRule {
 //     public boolean passes(S07_Socialite s) {
 //         return s.age >= 18;

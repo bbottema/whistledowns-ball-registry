@@ -1,48 +1,85 @@
 # Session 03 – Decisions & Loops (JShell)
 
-## Goal
+## What you’ll get out of this
 
-Use if/else statements and loops to evaluate multiple test cases.
+By the end of this session you can:
 
-## What You'll Do
+- write an `if/else` rule (a tiny decision engine)
+- run the same check for multiple test cases using a loop
+- read the output as a quick “mini test report” (input → result)
 
-1. Write a simple if/else rule
-2. Loop over an array of ages
-3. Loop over a list of family names
+## Concepts (quick read, then do the TODOs)
 
-## How to Run It
+### `if/else` is your branching rule
 
-**This session uses JShell - an interactive Java console.**
+Think: “if the input matches the rule, pass; otherwise, fail.”
 
-1. Open `S03_DecisionsLoops.java` to see the code snippets
-2. Open JShell Console: **Tools → JShell Console...**
-3. Copy code snippets from the file (remove `//` and `TODO:`)
-4. For the List example, paste the import statement first
-5. Observe output for each snippet
+```java
+if (age >= 18) {
+	System.out.println("Eligible");
+} else {
+	System.out.println("Not eligible");
+}
+```
 
-**Plan B (Scratch File):** Use **New → Scratch File → Java** instead if you prefer
+### Loops = data-driven testing
 
-## Expected Output
+Instead of testing one age, you test a whole list of ages.
 
-- "Eligible" or "Not eligible" for a single age
-- Multiple lines showing age → eligibility result
-- Multiple lines showing family name → respectable result
+```java
+for (int a : ages) {
+	System.out.println(a + " -> " + (a >= 18));
+}
+```
 
-## If You Get Stuck
+That `a -> true/false` output is basically a tiny table of results.
 
-**Syntax error in for loop**
-- For arrays: `for (int a : ages) { ... }`
-- For lists: `for (String f : families) { ... }`
+### Imports (only for the List example)
 
-**Cannot find symbol List**
-- Add `import java.util.List;` in JShell before using List
+JShell doesn’t automatically import everything.
+If you use `List`, paste this first:
 
-**Multi-line code in JShell**
-- JShell will show `...>` for continuation lines
-- Type the closing brace and press Enter to complete
+```java
+import java.util.List;
+```
 
-## Coach Notes
+## Start here
 
-Loops let you run the same check on multiple test cases. This is the foundation of data-driven testing.
+1. Open `S03_Assignment.java`.
+2. Follow the `TODO` blocks **in order**.
 
-You're building test-thinking patterns: given multiple inputs, what are the expected outcomes?
+## How to run (recommended: JShell Console)
+
+1. Open JShell Console: **Tools → JShell Console...**
+2. Copy snippet lines from `S03_Assignment.java`.
+3. Paste them into JShell **without** the leading `//`.
+
+## Plan B (no plugin): Java Scratch File
+
+1. In the Project view: **Right-click → New → Scratch File → Java**
+2. Paste the snippet lines (again: without `//`).
+3. Run the scratch file.
+
+## What “success” looks like
+
+You should observe:
+
+1. `Eligible` or `Not eligible` printed for the single-age rule
+2. multiple lines like `16 -> false` and `18 -> true` from the ages loop
+3. multiple lines mapping each family name to `true/false` for “respectable”
+
+## Troubleshooting
+
+### Syntax errors in a `for` loop
+
+- Arrays: `for (int a : ages) { ... }`
+- Lists: `for (String f : families) { ... }`
+
+### “cannot find symbol: List”
+
+- Paste `import java.util.List;` in JShell before the List snippet.
+
+### JShell shows `...>` and won’t run yet
+
+- You’re in a multi-line block.
+- Paste/type the closing `}` and press Enter.

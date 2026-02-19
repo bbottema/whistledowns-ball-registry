@@ -15,7 +15,7 @@ Introduce data-driven validation using a Map to store reputation scores.
 ## How to Run It
 
 1. Open all Java files in this session
-2. Right-click `S11_Demo.java` and run it
+2. Right-click `S11_Assignment.java` and run it
 
 ## Expected Output
 

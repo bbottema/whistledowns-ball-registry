@@ -13,7 +13,7 @@ Add diagnostic output explaining WHY someone is not invited.
 ## How to Run It
 
 1. Open all Java files in this session
-2. Right-click `S12_Demo.java` and run it
+2. Right-click `S12_Assignment.java` and run it
 
 ## Expected Output
 

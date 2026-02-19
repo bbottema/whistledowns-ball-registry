@@ -1,39 +1,65 @@
-# Session 07 – Etiquette Rules
+# Session 07 – Rules as a plug-in system (interfaces)
 
-## Goal
+## What you’ll get out of this
 
-Introduce interfaces and multiple rule implementations.
+By the end of this session you can:
 
-## What You'll Do
+- describe an interface as a “contract” for checks
+- implement two different rule classes that follow the same contract
+- loop over a list of rules and apply them to the same test data
 
-1. Define an EtiquetteRule interface
-2. Implement AgeRule and FamilyNameRule
-3. Apply multiple rules to a Socialite using polymorphism
+## Concepts (quick read, then do the TODOs)
 
-## How to Run It
+### Interface = contract
 
-1. Open all Java files in this session
-2. Right-click `S07_Demo.java` and run it
+Test-analyst translation: we’re making a **standard shape** for checks.
+If something is an `S07_EtiquetteRule`, we know we can call:
 
-## Expected Output
+```java
+rule.passes(socialite)
+```
+
+### Implementations = actual checks
+
+`S07_AgeRule` and `S07_FamilyNameRule` are two different checks.
+They’re different inside, but they *look the same from the outside*.
+
+### Polymorphism = “treat different checks the same way”
+
+That’s what lets us put different rule objects in a `List` and loop over them.
+
+## Start here
+
+1. Open `S07_EtiquetteRule.java` and define the interface.
+2. Implement `S07_AgeRule` and `S07_FamilyNameRule`.
+3. Open `S07_Assignment.java` and uncomment the TODOs.
+
+## How to run (IntelliJ)
+
+1. Open `S07_Assignment.java`.
+2. Click the green ▶ next to `main(...)`.
+
+## Plan B
+
+Right-click inside `S07_Assignment.java` and choose **Run 'S07_Assignment.main()'**.
+
+## What “success” looks like
+
+When you run `S07_Assignment`, you should see:
 
 ```
 AgeRule -> true
 FamilyNameRule -> true
 ```
 
-## If You Get Stuck
+## Troubleshooting
 
-**"S07_Socialite does not exist"**
-- Make sure the Socialite class is defined in this session
+### “does not implement abstract method …”
 
-**"Does not implement abstract method"**
-- Ensure your rule classes implement all methods from EtiquetteRule
+- Your rule class implements the interface, but you didn’t implement *all* methods.
+- Fix: implement both `passes(...)` and `name()`.
 
-## Coach Notes
+### “cannot find symbol: S07_EtiquetteRule” (or similar)
 
-An interface is a contract: "Any rule must have these methods."
-
-Implementations are concrete: "Here's how this specific rule works."
-
-Polymorphism means you can treat different rules the same way (loop over them, store them in a list) because they all follow the same contract.
+- The interface is still commented out.
+- Fix: uncomment/implement the interface in `S07_EtiquetteRule.java`.

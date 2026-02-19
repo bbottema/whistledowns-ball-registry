@@ -15,7 +15,7 @@ Load guest data from a CSV file instead of hardcoding, introducing file I/O and 
 
 1. Open all Java files in this session
 2. Note the `season-ledger.csv` file
-3. Right-click `S15_Demo.java` and run it
+3. Right-click `S15_Assignment.java` and run it
 
 ## Expected Output
 

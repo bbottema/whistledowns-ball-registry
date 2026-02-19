@@ -55,7 +55,7 @@ Don't worry though, you'll get used to it!
 
 ## Start here
 
-1. Open `S01_Sandbox.java`.
+1. Open `S01_Assignment.java`.
 2. Follow the `TODO` blocks **in order**.
 
 This README explains *how to run* the snippets and what “done” looks like.
@@ -66,10 +66,10 @@ JShell is an interactive Java console. No project setup ceremony — just type a
 
 1. Install the **JShell Console plugin** (see the repo root `README.md`).
 2. Open the JShell Console: **Tools → JShell Console...**
-3. In `S01_Sandbox.java`, copy a snippet line (or a small group of lines).
+3. In `S01_Assignment.java`, copy a snippet line (or a small group of lines).
 4. Paste it into JShell and press Enter.
 
-Tip: The lines in `S01_Sandbox.java` are commented out. In JShell, paste them **without** the leading `//`.
+Tip: The lines in `S01_Assignment.java` are commented out. In JShell, paste them **without** the leading `//`.
 
 ## Plan B (no plugin): Java Scratch File
 

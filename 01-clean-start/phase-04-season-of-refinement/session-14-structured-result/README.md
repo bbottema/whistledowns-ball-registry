@@ -13,7 +13,7 @@ Replace simple boolean returns with a structured result object that carries both
 ## How to Run It
 
 1. Open all Java files in this session
-2. Right-click `S14_Demo.java` and run it
+2. Right-click `S14_Assignment.java` and run it
 
 ## Expected Output
 

@@ -13,7 +13,7 @@ Create an automation-style test harness that arranges data, runs checks, and rep
 
 ## How to Run It
 
-1. Open `S13_RegistryTestRun.java`
+1. Open `S13_Assignment.java`
 2. Right-click and run it
 
 ## Expected Output

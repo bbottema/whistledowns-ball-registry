@@ -13,7 +13,7 @@ Build a simple assertion library and use it to test the Ball registry.
 ## How to Run It
 
 1. Open all Java files in this session
-2. Right-click `S09_Demo.java` and run it
+2. Right-click `S09_Assignment.java` and run it
 
 ## Expected Output
 

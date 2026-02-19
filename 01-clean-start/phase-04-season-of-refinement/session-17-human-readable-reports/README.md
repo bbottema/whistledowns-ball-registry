@@ -14,7 +14,7 @@ Improve output formatting with professional-looking reports using String formatt
 ## How to Run It
 
 1. Open all Java files in this session
-2. Right-click `S17_Demo.java` and run it
+2. Right-click `S17_Assignment.java` and run it
 
 ## Expected Output
 

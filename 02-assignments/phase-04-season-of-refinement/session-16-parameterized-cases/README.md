@@ -14,7 +14,7 @@ Simulate parameterized testing by looping over test cases with expected outcomes
 ## How to Run It
 
 1. Open all Java files in this session
-2. Right-click `S16_Demo.java` and run it
+2. Right-click `S16_Assignment.java` and run it
 
 ## Expected Output
 

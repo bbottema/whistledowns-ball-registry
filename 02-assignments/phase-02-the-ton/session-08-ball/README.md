@@ -1,21 +1,55 @@
-# Session 08 – The Ball
+# Session 08 – The Ball: an orchestrator (apply rules to test data)
 
-## Goal
+## What you’ll get out of this
 
-Create a Ball class that orchestrates multiple rules and produces a guest registry.
+By the end of this session you can:
 
-## What You'll Do
+- store a list of rules inside another class
+- implement “all rules must pass” logic
+- print a simple registry (basically a tiny report)
 
-1. Define the Ball class with a list of rules
-2. Implement `mayAttend` to check all rules
-3. Implement `printRegistry` to show invite status for all guests
+## Concepts (quick read, then do the TODOs)
 
-## How to Run It
+### Orchestrator = runs a bunch of checks for you
 
-1. Open all Java files in this session
-2. Right-click `S08_Demo.java` and run it
+Test-analyst translation: the `Ball` is your mini test runner.
 
-## Expected Output
+- input = guests (test data)
+- checks = rules
+- output = printed report
+
+### “All rules must pass”
+
+The logic for `mayAttend` is:
+
+```java
+for (S08_EtiquetteRule rule : rules) {
+
+    if (!rule.passes(socialite)) {
+        return false;
+    }
+}
+return true;
+```
+
+## Start here
+
+1. Open `S08_Ball.java` and implement the TODOs.
+2. Open `S08_Assignment.java` and uncomment the TODOs.
+3. Run the demo.
+
+## How to run (IntelliJ)
+
+1. Open `S08_Assignment.java`.
+2. Click the green ▶ next to `main(...)`.
+
+## Plan B
+
+Right-click inside `S08_Assignment.java` and choose **Run 'S08_Assignment.main()'**.
+
+## What “success” looks like
+
+You should see:
 
 ```
 Daphne -> INVITED
@@ -23,18 +57,17 @@ Penelope -> NOT INVITED
 Simon -> INVITED
 ```
 
-## If You Get Stuck
+## Troubleshooting
 
-**"Cannot find symbol Ball"**
-- Make sure S08_Ball.java is in the same directory
+### Output is wrong
 
-**Logic errors in mayAttend**
-- Loop through all rules
-- If any rule fails, return false
-- Only return true if all pass
+Sanity-check `mayAttend`:
 
-## Coach Notes
+- you must loop over **all** rules
+- return `false` as soon as any rule fails
+- only return `true` if none fail
 
-The Ball is an orchestrator. It coordinates applying multiple rules to multiple guests.
+### “cannot find symbol: S08_Ball” (or similar)
 
-This pattern appears everywhere in automation: take a collection of checks, apply them to test data, report results.
+- Make sure you’re editing files in *this* session folder.
+- Make sure the `S08_Ball` class is not commented out.
