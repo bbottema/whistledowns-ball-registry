@@ -14,9 +14,20 @@ Download and install **IntelliJ IDEA Community Edition** (it's free). When you f
 
 ### Step 2: Open This Project
 
+**Preferred route (recommended): clone the repository**
+
+1. Launch IntelliJ
+2. Click **Get from VCS** (or **Clone Repository**)
+3. Paste the Git URL:
+   - `https://github.com/bbottema/whistledowns-ball-registry.git`
+4. Choose a local folder and click **Clone**
+5. If prompted to trust the project, click **Trust Project**
+
+**Alternative route (if you downloaded a ZIP or already have the folder): open the project folder**
+
 1. Launch IntelliJ
 2. Click **Open**
-3. Navigate to this project folder and click **Open**
+3. Navigate to the project folder and click **Open**
 4. If prompted to trust the project, click **Trust Project**
 
 ### Step 3: Install JShell Console Plugin (Optional)

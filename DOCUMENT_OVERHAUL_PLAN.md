@@ -124,7 +124,7 @@ Avoid:
   - Scratch file as fallback
 - Troubleshooting should cover:
   - missing semicolons
-  - `/reset`
+  - how to reset JShell state (in IntelliJ JShell Console: Thrash/Bin button)
   - “cannot find symbol” (setup order)
   - `NullPointerException` (Session 02 especially)
 

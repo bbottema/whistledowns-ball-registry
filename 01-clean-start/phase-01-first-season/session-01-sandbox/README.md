@@ -105,4 +105,7 @@ You should observe:
 
 ### Start over
 
-Type `/reset` in JShell to clear variables.
+JShell remembers variables from previous runs.
+
+- In the **IntelliJ JShell Console**, click the **trash/bin** button to wipe the session.
+- (If you're using *terminal* JShell instead, you can type `/reset`.)

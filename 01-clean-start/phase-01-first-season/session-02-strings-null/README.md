@@ -80,4 +80,5 @@ You should observe:
 ### JShell says “variable already exists”
 
 - JShell remembers your previous run.
-- Type `/reset` and try again.
+- In the **IntelliJ JShell Console**, click the **trash/bin** button and try again.
+  (If you're using *terminal* JShell instead, type `/reset`.)
