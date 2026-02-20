@@ -7,12 +7,19 @@
 
 void main() {
 
+    // For deeper explainers of the concepts introduced here:
+    //   - /help me understand/= vs ==.md
+    //   - /help me understand/equals vs == vs !=.md
+    //   - /help me understand/What a method is.md
+
     // TODO 1: String equality
     // String expected = "OK";
     // String actual = "OK";
     // System.out.println(expected.equals(actual)); // should be true
 
     // TODO 2: Common string operations
+    // These are *methods* on String (dot + name + parentheses).
+    // The text "Status: OK" is ordinary sample input text; "OK" has no special meaning in Java.
     // String msg = "Status: OK";
     // System.out.println(msg.contains("OK"));
     // System.out.println(msg.startsWith("Status"));

@@ -14,40 +14,21 @@ By the end of this session, you will be comfortable:
 Read this once, then jump straight into the TODOs.
 You are *not* expected to memorize any of this. When something goes wrong, treat it as a clue you can investigate (that is the day-to-day job of testing).
 
-### Strings: use `.equals(...)` (not `==`)
+You can read about the concepts introduced in this session in these files:
 
-In the TODOs you'll compare two pieces of text.
+- [`/help me understand/What a method is.md`](/help%20me%20understand/What%20a%20method%20is.md)
+- [`/help me understand/= vs ==.md`](/help%20me%20understand/%3D%20vs%20%3D%3D.md)
+- [`/help me understand/equals vs == vs !=.md`](/help%20me%20understand/equals%20vs%20%3D%3D%20vs%20!%3D.md)
 
-- `==` answers: "are these two variables literally the same thing?"
-- `.equals(...)` answers: "do these two strings have the same letters?"
+### The only rules you need for the TODOs
 
-For this course, when you mean **same text**, use:
+You are going to do three things in `S02_Assignment.java`:
 
-```java
-expected.equals(actual)
-```
+1. Compare two pieces of text → use **`.equals(...)`**, not `==`
+2. Call a few **String methods** like `contains(...)`, `startsWith(...)`, `replace(...)`, `trim()`
+3. Do a **null-safe** check → check `!= null` before calling methods
 
-If two strings *look* the same but `==` returns `false`, that can be normal in Java.
-
-### Null: it means "missing value"
-
-In testing, `null` usually means: we never got a value (missing input, missing data, optional field).
-
-The scary part: calling a method on `null` stops the program immediately with `NullPointerException`.
-Example: `familyName.isBlank()` will crash if `familyName` is `null`.
-
-The safe pattern you'll use in this session:
-
-```java
-familyName != null && !familyName.isBlank()
-```
-
-What this does (left to right):
-
-1. First check: do we have a value (`familyName != null`)?
-2. Only if yes, then check the text (`!familyName.isBlank()`).
-
-That "only if" behavior is what keeps your test run from blowing up.
+If any of those lines feel unclear, use the explainers above.
 
 ### Fail fast (optional)
 
@@ -79,6 +60,8 @@ You should observe:
 2. several printed values from the string operations (`contains`, `startsWith`, `replace`, `toLowerCase`, `trim`)
 3. `false` printed for the null-safe `respectable` check
 
+Note: sample text like `"Status: OK"` is just regular text inside quotes (it is not a keyword).
+
 If you can:
 - explain why `==` is wrong for strings,
 - write a null-safe check,
@@ -92,11 +75,13 @@ you’ve crossed one of the biggest early hurdles in Java.
 
 - You called a method on `null`. This is one of the most common beginner errors in Java. It does not mean you “broke Java.”
 - Fix: check `!= null` *before* calling methods like `.isBlank()`.
+- If you want a slower walkthrough: start with `help me understand/What a method is.md`, then read `equals vs == vs !=.md`.
 
 ### “Why does `==` fail for strings?”
 
 - Because `==` is not a text comparison.
 - Fix: use `.equals(...)`.
+- Deeper explainer: `help me understand/equals vs == vs !=.md`
 
 ### If you accidentally ran the wrong thing
 
