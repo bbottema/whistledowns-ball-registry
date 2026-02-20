@@ -14,41 +14,21 @@ By the end of this session, you will be able to:
 ## Concepts (quick read, then do the TODOs)
 
 Read this once, then jump straight into the TODOs.
-You are *not* expected to memorize loop syntax on sight. If you get a red underline or a compiler error, that's normal: read the message, fix one thing, and run again (that's testing).
+You are *not* expected to memorize syntax on sight. If you get a red underline or a compiler error, that's normal: read the message, fix one thing, and run again.
 
-### TODO 1: `if/else` = one rule, one printed result
+You can read about the concepts introduced in this session in these files:
 
-An `if/else` picks one path or the other.
-In this session you'll use it for a simple rule like "the age is at least 18".
+- [`help me understand/If-else for testers.md`](help%20me%20understand/If-else%20for%20testers.md)
+- [`help me understand/Loops and test cases.md`](help%20me%20understand/Loops%20and%20test%20cases.md)
+- [`help me understand/Imports and List.of.md`](help%20me%20understand/Imports%20and%20List.of.md)
 
-When you run it, you should observe **one line printed**, either:
+### The only rules you need for the TODOs
 
-- `Eligible`
-- `Not eligible`
+You are going to do three things in `S03_Assignment.java`:
 
-(Tip: missing `{` or `}` is the #1 reason an `if/else` won't compile.)
-
-### TODO 2: A `for` loop = run the same check for several test cases
-
-Loops are how you avoid copy/pasting the same check 10 times.
-You'll loop over several ages and print the result for each one.
-
-You should observe multiple lines like:
-
-- `16 -> false`
-- `18 -> true`
-
-Micro-translation: `(a >= 18)` is a yes/no expression, so it becomes `true` or `false`.
-
-### TODO 3: `List` = another container for test cases (and it needs an import)
-
-For the "family name" example, we use a `List` just to hold several sample inputs.
-
-If IntelliJ shows an error like "cannot find symbol: List", make sure the file has this at the top:
-
-```java
-import java.util.List;
-```
+1. Write one `if/else` rule and print one result
+2. Loop over multiple inputs and print `input -> result`
+3. Use a `List` of text test cases (and add `import java.util.List;` when you reach that TODO)
 
 ## Start here
 

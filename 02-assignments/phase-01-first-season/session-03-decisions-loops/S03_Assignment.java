@@ -5,6 +5,11 @@
 // 2) Uncomment the TODO blocks below in order.
 // 3) Run the file.
 
+// Optional deeper explainers:
+// - help me understand/If-else for testers.md
+// - help me understand/Loops and test cases.md
+// - help me understand/Imports and List.of.md
+
 // TODO (for TODO 3): Uncomment this import when you reach the List exercise.
 // import java.util.List;
 
