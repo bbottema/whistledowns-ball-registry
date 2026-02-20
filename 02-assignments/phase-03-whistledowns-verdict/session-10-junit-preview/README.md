@@ -13,13 +13,17 @@ By the end of this session you can:
 
 ## Concepts (quick read)
 
-### `@Test` marks a test
+Read this once, then open `S10_Assignment.java`.
+This session is about "recognising the shapes" so they don't feel scary later.
 
-JUnit runs methods annotated with `@Test`.
+### `@Test` = "this method is a test"
 
-### Assertions are built-in
+In the example file, look for methods annotated with `@Test`.
+That annotation is how JUnit knows what to run.
 
-Instead of writing your own `MiniAsserts`, JUnit gives you:
+### Assertions are built in
+
+Where you previously wrote your own `MiniAsserts`, JUnit provides ready-made checks such as:
 
 ```java
 assertTrue(...)
@@ -27,10 +31,18 @@ assertFalse(...)
 assertEquals(...)
 ```
 
-### Tests should be independent
+### Arrange → Act → Assert = a familiar testing workflow
+
+In the example, try to label each section:
+
+- Arrange: set up inputs/test data
+- Act: call the code under test
+- Assert: check the result
+
+### Tests are independent (one failure shouldn't hide the others)
 
 Each test sets up its own data.
-If one test fails, the others should still be able to run.
+If one test fails, that is useful information, and the rest should still be runnable.
 
 ## Start here
 

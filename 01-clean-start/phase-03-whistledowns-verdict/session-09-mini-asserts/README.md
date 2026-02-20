@@ -1,4 +1,4 @@
-# Session 09 – Mini asserts (tiny test framework vibes)
+# Session 09 – Mini asserts (a tiny test helper)
 
 ## What you’ll get out of this
 
@@ -10,18 +10,30 @@ By the end of this session you can:
 
 ## Concepts (quick read, then do the TODOs)
 
-### An assert is a test expectation
+Read this once, then go do the TODOs.
 
-If the expectation is not met, the test should fail *loudly*.
+The goal of this session is simple: instead of reading a bunch of `true/false` prints and guessing,
+you will make the program say exactly what was expected when something is wrong.
+
+### An "assert" = a check with an expectation
+
+In `S09_Assignment.java` you'll call your helper like this:
 
 ```java
 S09_MiniAsserts.assertTrue(ball.mayAttend(simon), "Simon should be invited");
 ```
 
-### `AssertionError` is not a crash — it’s a result
+Read it as:
 
-In testing terms: an `AssertionError` means “the check failed”.
-That’s the whole point.
+- we expect this to be `true`
+- and if it isn't, show this message
+
+### `AssertionError` = a test failure signal (not "you broke Java")
+
+When an assertion fails, we throw an `AssertionError` on purpose.
+That's useful because it stops the run right at the first failing check, with a message you wrote.
+
+In tester terms: it's a clear FAIL result.
 
 ### Optional: `assertEquals`
 
