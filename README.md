@@ -4,11 +4,28 @@ A beginner-friendly Java warmup project for testers preparing for a Java testing
 
 ## What This Is
 
-Lady Whistledown needs help managing the social registry for the season's ball. You'll build a system that determines who may attend based on various etiquette rules. This project introduces Java fundamentals in a calm, structured way.
+Lady Whistledown needs help managing the social registry for the season's ball.
+
+You'll build a system that determines who may attend based on various etiquette rules. This project introduces Java fundamentals in gentle steps, and each phase builds on the previous one; nothing appears without preparation.
+
+## What This Is Not
+
+This is not a memorization exercise.
+
+You are not expected to remember every keyword, every syntax rule, or every pattern.  
+You are expected to experiment, run code, read output, and grow comfortable. Confusion at first exposure is normal. Repetition creates clarity.
+
+You can always:
+- re-run a session
+- look at earlier assignments
+- compare with the solutions
+- take small steps
+
+This project is a safe sandbox. Mistakes are expected here.
 
 ## Getting Started
 
-**Java version:** this course targets modern Java, and requires **Java 21 or higher**.
+This warmup uses modern Java and requires **Java 21 or higher**.
 
 In IntelliJ: set **Project SDK** to your installed JDK (21+). If you don't have one yet, IntelliJ can download it for you. You can manage all this in **File > Project Structure > Project**.
 
@@ -43,7 +60,10 @@ Ready to start? Here's what to do:
 3. Read the session `README.md` for instructions
 4. Click the green ▶ run button to run the program
 
-Note: in Session 01 you'll intentionally crash the program once. Seeing output, then a crash, then a stack trace is expected here — treat it like a useful test failure report.
+Note: in Session 01 you'll intentionally crash the program once. Seeing output, then a crash, then a stack trace is expected here — treat it like a useful test failure report. 
+Seeing a stack trace is part of learning Java — it shows you exactly where something happened.
+
+Each of the three main folders (clean-start, assignments, solutions) contains the same phase structure:
 
 ## Project Structure
 
@@ -73,7 +93,8 @@ Each of the three folders contains identical phase structure:
 - **Phase 02 – The Ton** (Sessions 6-8): Classes, interfaces, and orchestration
 - **Phase 03 – Whistledown's Verdict** (Sessions 9-10): Assertions and JUnit preview
     - **Note:** This concludes the core basics, and you can choose to stop here
-- **Phase 04 – Season of Refinement** (Sessions 11-18, optional): Maps, diagnostics, test harnesses, structured results, CSV data loading, parameterized testing, formatted reports, and statistics
+- **Phase 04 – Season of Refinement** (Sessions 11-18, optional): 
+  - Maps, diagnostics, test harnesses, structured results, CSV data loading, parameterized testing, formatted reports, and statistics
 
 ## How to Run a Session
 
@@ -122,4 +143,4 @@ If you're stuck for more than 10 minutes, check the solution in `03-solutions` o
 
 ---
 
-*Built with care for testers entering the world of Java.*
+*Built with care for testers stepping confidently into the world of Java.*
