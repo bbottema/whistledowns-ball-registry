@@ -10,30 +10,35 @@ By the end of this session, you will be able to:
 
 ## Concepts (quick read, then do the TODOs)
 
-### A method is a named rule
+Read this once, then go do the TODOs. You are not expected to memorize method syntax.
+If IntelliJ gives a red underline, that just means "it can't run yet". Fix one thing and try again.
 
-You're going to implement:
+### A method = a reusable check you can run on many inputs
+
+You're going to implement a method with this signature:
 
 ```java
 static boolean isEligible(int age, String familyName)
 ```
 
-Think of it as: "given this input, what should the outcome be?"
+Think of it like a mini test helper:
 
-**About `static` (enough for today)**: it means you can call the method directly from `main` without creating an object first.
-If that sentence feels fuzzy: ignore it and follow the TODOs. You’ll still succeed.
+- Input: an `age` and a `familyName`
+- Output: `true` or `false`
 
-### Return `true/false` like a test result
+You don't need to fully understand `static` today. For now, it simply lets `main(...)` call this method directly.
+
+### Returning `true/false` = returning a test result
 
 - `true` means: eligible
 - `false` means: not eligible
 
-For this session, the rule is:
+For this session, the rule you are implementing is:
 
 - age must be **18+**
 - family name must be **not null and not blank**
 
-A safe “not null and not blank” check looks like:
+The safe pattern (so your test run doesn't crash on `null`) is:
 
 ```java
 familyName != null && !familyName.isBlank()

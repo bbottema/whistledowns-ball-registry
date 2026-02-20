@@ -11,36 +11,50 @@ By the end of this session, you will be comfortable:
 
 ## Concepts (quick read, then do the TODOs)
 
+Read this once, then jump straight into the TODOs.
+You are *not* expected to memorize any of this. When something goes wrong, treat it as a clue you can investigate (that is the day-to-day job of testing).
+
 ### Strings: use `.equals(...)` (not `==`)
 
-In Java, `==` does not compare text content. It checks whether two variables point to the same object in memory. In other words, in Java, `==` checks if two references are the *same object*.
+In the TODOs you'll compare two pieces of text.
 
-For text equality, use:
+- `==` answers: "are these two variables literally the same thing?"
+- `.equals(...)` answers: "do these two strings have the same letters?"
+
+For this course, when you mean **same text**, use:
 
 ```java
 expected.equals(actual)
 ```
 
-If two strings look the same but `==` returns false, that’s normal in Java.
+If two strings *look* the same but `==` returns `false`, that can be normal in Java.
 
-### Null: it means “missing value”
+### Null: it means "missing value"
 
-`null` is Java’s way of saying “nothing was set here.”
-If you do `familyName.isBlank()` when `familyName` is `null`, Java can’t continue and you’ll get a `NullPointerException`.
+In testing, `null` usually means: we never got a value (missing input, missing data, optional field).
 
-The safe pattern:
+The scary part: calling a method on `null` stops the program immediately with `NullPointerException`.
+Example: `familyName.isBlank()` will crash if `familyName` is `null`.
+
+The safe pattern you'll use in this session:
 
 ```java
 familyName != null && !familyName.isBlank()
 ```
 
-Java evaluates this from left to right.  
-If `familyName` is null, the second part is never executed.
+What this does (left to right):
+
+1. First check: do we have a value (`familyName != null`)?
+2. Only if yes, then check the text (`!familyName.isBlank()`).
+
+That "only if" behavior is what keeps your test run from blowing up.
 
 ### Fail fast (optional)
 
-Sometimes, instead of quietly returning `false`, you want to stop immediately and tell future-you what went wrong. In tests, this often means the input itself was invalid.
-That’s what the optional `IllegalArgumentException` example is for.
+Sometimes returning `false` is fine.
+Other times (especially in tests) you want to stop immediately with a message that says "this input was invalid".
+
+That's what the optional `IllegalArgumentException` example is: a deliberate, readable failure.
 
 ## Start here
 

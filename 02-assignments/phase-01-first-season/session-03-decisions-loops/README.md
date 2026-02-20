@@ -7,40 +7,44 @@ You are not writing anything fancy here — just small, observable checks.
 
 By the end of this session, you will be able to:
 
-- write an `if/else` rule (a tiny decision engine)
+- write an `if/else` rule (one check with two outcomes)
 - run the same check for multiple test cases using a loop
 - read the output as a quick “mini test report” (input → result)
 
 ## Concepts (quick read, then do the TODOs)
 
-### `if/else` is your branching rule
+Read this once, then jump straight into the TODOs.
+You are *not* expected to memorize loop syntax on sight. If you get a red underline or a compiler error, that's normal: read the message, fix one thing, and run again (that's testing).
 
-Think: “if the input matches the rule, pass; otherwise, fail.”
+### TODO 1: `if/else` = one rule, one printed result
 
-```java
-if (age >= 18) {
-	System.out.println("Eligible");
-} else {
-	System.out.println("Not eligible");
-}
-```
+An `if/else` picks one path or the other.
+In this session you'll use it for a simple rule like "the age is at least 18".
 
-### Loops = data-driven testing
+When you run it, you should observe **one line printed**, either:
 
-Instead of testing one age, you test a whole list of ages.
+- `Eligible`
+- `Not eligible`
 
-```java
-for (int a : ages) {
-	System.out.println(a + " -> " + (a >= 18));
-}
-```
+(Tip: missing `{` or `}` is the #1 reason an `if/else` won't compile.)
 
-That `a -> true/false` output is basically a tiny table of results.
+### TODO 2: A `for` loop = run the same check for several test cases
 
-### Imports (only for the List example)
+Loops are how you avoid copy/pasting the same check 10 times.
+You'll loop over several ages and print the result for each one.
 
-In a Java file, imports go at the top.
-If one of the TODOs uses `List`, you’ll need:
+You should observe multiple lines like:
+
+- `16 -> false`
+- `18 -> true`
+
+Micro-translation: `(a >= 18)` is a yes/no expression, so it becomes `true` or `false`.
+
+### TODO 3: `List` = another container for test cases (and it needs an import)
+
+For the "family name" example, we use a `List` just to hold several sample inputs.
+
+If IntelliJ shows an error like "cannot find symbol: List", make sure the file has this at the top:
 
 ```java
 import java.util.List;

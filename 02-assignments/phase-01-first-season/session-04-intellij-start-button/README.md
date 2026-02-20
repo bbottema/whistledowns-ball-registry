@@ -14,20 +14,29 @@ By the end of this session you can:
 
 ## Concepts (quick read, then do the TODOs)
 
-### `main` is the start of the program
+Read this once, then go do the TODOs. You do not need to understand every keyword yet.
+For this session, your job is simply to (1) find where the program starts, (2) click Run, and (3) use any errors as clues.
 
-When you click Run, Java starts at:
+### `main(...)` = where IntelliJ starts running
+
+When you click Run, IntelliJ starts executing the code inside this method:
 
 ```java
 public static void main(String[] args)
 ```
 
-You can treat the rest (`static`, `String[] args`) as required boilerplate code for now. This is also one of the oldest parts of Java!
+Today, treat `public static void` and `String[] args` as "the required shape" of a Java program. You'll learn what they mean later.
 
-### Red underline = a compile-time signal
+### Red underline = "it can't run yet" (and that's useful)
 
-If IntelliJ underlines something in red, your code doesn’t compile yet.
-That’s not failure — that’s fast feedback.
+If IntelliJ underlines something in red, the program won't run *yet*.
+That is not a personal failure - it's quick feedback.
+
+What to do:
+
+1. Read the message (hover the red underline).
+2. Fix one small thing.
+3. Run again.
 
 ## Start here
 
