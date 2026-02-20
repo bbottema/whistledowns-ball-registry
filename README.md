@@ -69,10 +69,8 @@ Each of the three main folders (clean-start, assignments, solutions) contains th
 
 This project has four main folders:
 
-### 00-coach-manual
+### 00-coach-material
 Contains coaching materials and reference documents. This is optional - students can work through the project independently, but if a coach is guiding the sessions, this folder provides:
-- **01. Whistledown's Ball Registry - core.md**: Complete coach manual with session-by-session guidance, timing, and teaching notes
-- **02. Whistledown's Ball Registry - advanced.md**: Coach notes for Phase 4 (advanced topics)
 - **03. Progress Tracker.md**: Printable template to fill in for students to keep track during the course
 - **04. Java Cheat Sheet.md**: One-page printable reference of Java fundamentals covered in this warmup
 
@@ -95,6 +93,7 @@ Each of the three folders contains identical phase structure:
     - **Note:** This concludes the core basics, and you can choose to stop here
 - **Phase 04 – Season of Refinement** (Sessions 11-18, optional): 
   - Maps, diagnostics, test harnesses, structured results, CSV data loading, parameterized testing, formatted reports, and statistics
+  - You can read more about Phase 04 in /02-assignments/phase-04-season-of-refinement/README.md
 
 ## How to Run a Session
 

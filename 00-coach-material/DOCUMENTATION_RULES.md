@@ -70,7 +70,6 @@ Every session `README.md` should follow this structure:
 
 ### Guardrails (to prevent drift)
 
-- If a concept needs more than ~15 lines without a snippet, it’s probably **coach manual** content.
 - “Success” must be observable (output, files produced, tests passing), not “understand X”.
 - Troubleshooting should list only the errors learners will realistically hit in that session.
 
@@ -185,7 +184,6 @@ For each session folder (existing or new):
 Safeguards:
 - cap Concepts to 2–5 micro-sections
 - each micro-section must connect to a TODO/snippet immediately
-- move deeper narrative to `00-coach-manual/`
 
 ### Failure mode B: README becomes only run instructions
 
