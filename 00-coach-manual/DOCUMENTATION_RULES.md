@@ -1,7 +1,5 @@
 # Documentation Guide (Session README + assignment code)
 
-Date: 19 February 2026
-
 This document is the house style guide for Whistledown’s Ball Registry documentation.
 Use it whenever you add a new session, add a new assignment, or revise an existing page.
 
