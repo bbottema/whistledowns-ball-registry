@@ -11,7 +11,7 @@ By the end of this session you can:
 - map it to a testing workflow you already know (Arrange → Act → Assert)
 - recognise the most common annotations and assertions (`@Test`, `assertTrue`, `assertFalse`)
 
-## Concepts (quick read, then do the TODOs)
+## Concepts (quick read)
 
 ### `@Test` marks a test
 
@@ -42,9 +42,16 @@ That file is the entry point for this session.
 You don’t run this session inside this warmup project.
 It’s intentionally read-only.
 
+## Plan B
+
+If you’re feeling impatient (very normal):
+
+- treat this as a 10-minute reading session
+- then jump straight to Session 11 (back to running code)
+
 ## What “success” looks like
 
-Success is: you can look at the code and say:
+Success is: you can look at the code and label the parts correctly:
 
 - “Ah, this is a test method.”
 - “This part is setup (arrange).”

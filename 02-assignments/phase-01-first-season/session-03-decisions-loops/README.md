@@ -1,8 +1,11 @@
 # Session 03 – Decisions & Loops (run a Java file)
 
+This session is about turning “rules in your head” into code you can run.
+You are not writing anything fancy here — just small, observable checks.
+
 ## What you’ll get out of this
 
-By the end of this session you can:
+By the end of this session, you will be able to:
 
 - write an `if/else` rule (a tiny decision engine)
 - run the same check for multiple test cases using a loop
@@ -37,7 +40,7 @@ That `a -> true/false` output is basically a tiny table of results.
 ### Imports (only for the List example)
 
 In a Java file, imports go at the top.
-If you use `List`, you’ll need:
+If one of the TODOs uses `List`, you’ll need:
 
 ```java
 import java.util.List;
@@ -67,6 +70,11 @@ You should observe:
 3. multiple lines mapping each family name to `true/false` for “respectable”
 
 ## Troubleshooting
+
+### The output looks confusing
+
+- Treat each printed line as a mini test result: **input → actual output**.
+- If something looks wrong, add a `System.out.println(...)` for the input you think you’re testing.
 
 ### Syntax errors in a `for` loop
 

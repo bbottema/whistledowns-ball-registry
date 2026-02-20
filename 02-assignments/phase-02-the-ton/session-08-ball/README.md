@@ -24,10 +24,9 @@ The logic for `mayAttend` is:
 
 ```java
 for (S08_EtiquetteRule rule : rules) {
-
-    if (!rule.passes(socialite)) {
-        return false;
-    }
+	if (!rule.passes(socialite)) {
+		return false;
+	}
 }
 return true;
 ```
@@ -66,6 +65,8 @@ Sanity-check `mayAttend`:
 - you must loop over **all** rules
 - return `false` as soon as any rule fails
 - only return `true` if none fail
+
+Common bug: returning `true` *inside* the loop. That makes you stop after the first rule.
 
 ### “cannot find symbol: S08_Ball” (or similar)
 

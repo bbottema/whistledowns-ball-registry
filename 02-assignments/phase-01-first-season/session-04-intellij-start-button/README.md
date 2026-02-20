@@ -32,7 +32,7 @@ That’s not failure — that’s fast feedback.
 ## Start here
 
 1. Open `S04_Assignment.java`.
-2. Follow the TODO.
+2. Follow the TODO blocks **in order**.
 
 ## How to run (IntelliJ)
 
@@ -60,6 +60,11 @@ Hello tester
 
 - Make sure the file name and the `class` name match: `S04_Assignment`.
 - Make sure you are running the file that actually contains `main(...)`.
+
+### It can’t run after I renamed something
+
+- In Java, the public class name and the file name must match.
+- Fix: if you renamed the file, rename the `class` too (or undo the rename).
 
 ## Controlled error practice (optional, but recommended)
 

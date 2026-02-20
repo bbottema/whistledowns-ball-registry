@@ -2,7 +2,7 @@
 
 ## What you’ll get out of this
 
-By the end of this session you can:
+By the end of this session, you will be able to:
 
 - write a method that returns `true`/`false` (hello, reusable validation)
 - treat the method like a tiny “business rule” you can test with multiple inputs
@@ -20,7 +20,8 @@ static boolean isEligible(int age, String familyName)
 
 Think of it as: "given this input, what should the outcome be?"
 
-**About `static`**: This keyword means "this method belongs to the class itself, not to a specific object". You can call it directly without creating an object first (e.g., `isEligible(21, "Bridgerton")`). In test automation terms: it's a utility function you can call anytime.
+**About `static` (enough for today)**: it means you can call the method directly from `main` without creating an object first.
+If that sentence feels fuzzy: ignore it and follow the TODOs. You’ll still succeed.
 
 ### Return `true/false` like a test result
 
@@ -31,6 +32,12 @@ For this session, the rule is:
 
 - age must be **18+**
 - family name must be **not null and not blank**
+
+A safe “not null and not blank” check looks like:
+
+```java
+familyName != null && !familyName.isBlank()
+```
 
 ## Start here
 

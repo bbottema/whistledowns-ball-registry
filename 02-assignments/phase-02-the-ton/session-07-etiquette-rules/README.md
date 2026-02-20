@@ -28,7 +28,8 @@ They’re different inside, but they *look the same from the outside*.
 
 That's what lets us put different rule objects in a `List` and loop over them.
 
-Test-analyst translation: imagine you have a checklist where every item has a "pass/fail" checkbox. Each check is different (some check age, some check names), but you can process them all the same way: go through the list, tick each box. That's polymorphism.
+Test-analyst translation: imagine a checklist where every item has a pass/fail box.
+Each check is different inside, but you can run them all the same way: loop the list and ask “pass?”
 
 ## Start here
 
