@@ -1,8 +1,9 @@
-# Documentation Overhaul Plan (Sessions 02–18)
+# Documentation Guide (Session README + assignment code)
 
 Date: 19 February 2026
 
-This document captures the plan for updating the remaining sessions (02–18) to match the Session 01 documentation style.
+This document is the house style guide for Whistledown’s Ball Registry documentation.
+Use it whenever you add a new session, add a new assignment, or revise an existing page.
 
 The audience is **test analysts who are nervous about Java**. The goal is to make each session feel safe, predictable, and runnable without a coach.
 
@@ -53,7 +54,7 @@ For every session:
 
 ## The session README contract (template)
 
-Every session `README.md` in `02-assignments/**/session-*/` will be reshaped to this structure:
+Every session `README.md` should follow this structure:
 
 1. `# Session XX – <topic>`
 2. `## What you’ll get out of this` (3–5 bullets; capabilities, not abstract goals)
@@ -114,7 +115,7 @@ Avoid:
 
 ---
 
-## Phase-by-phase execution plan (because ‘how to run’ changes)
+## Phase-by-phase run-mode notes (because “how to run” changes)
 
 ### Phase 01 — First Season (Sessions 02–05)
 
@@ -150,24 +151,24 @@ Avoid:
 
 ## Concrete workflow per session (repeatable loop)
 
-For each session folder (S02 … S18):
+For each session folder (existing or new):
 
 1. **Inventory**
-   - read the session `README.md`
-   - identify the main assignment file(s) to point learners at
-2. **Rewrite README into the template**
-   - keep existing meaning, but reframe into friendly, runnable micro-chunks
+   - read the existing session `README.md` (if present)
+   - identify the main assignment file(s) learners should start with
+2. **Draft/update the README using the template**
+   - keep the meaning, but reframe into friendly, runnable micro-chunks
    - add example snippet(s) where helpful
 3. **Refit assignment code header**
    - short “how to use this file” + numbered TODO map
 4. **Cross-link check**
    - README points to code file(s)
    - code header points to README
-5. **Regression checks**
-   - README still includes concept explanations (not just instructions)
+5. **Quality checks**
+   - README still includes concepts (not just instructions)
    - “success looks like” is observable
    - troubleshooting matches likely errors
-6. **Consistency check against Session 01**
+6. **Consistency check against Session 01-style pages**
    - structure and tone match
 
 ---
@@ -191,21 +192,13 @@ Safeguards:
 
 ---
 
-## Deliverables
+## Keeping tracks in sync
 
-When complete:
+This repo has two learner tracks:
 
-- Sessions 02–18 in `02-assignments/` have updated, consistent, learner-friendly `README.md` files.
-- Each session’s main assignment file(s) have updated, consistent top-of-file guidance and TODO maps.
-- (Recommended) Mirror the same README changes into `01-clean-start/` so both tracks feel identical to learners.
+- `01-clean-start/` (guided track)
+- `02-assignments/` (assignment track)
 
----
+Documentation should be mirrored so both tracks feel identical to learners.
 
-## Suggested rollout order
-
-1. **Batch 1 (fast alignment)**: Sessions 02–05
-2. **Batch 2 (objects/run mode shift)**: Sessions 06–08
-3. **Batch 3 (testing begins)**: Sessions 09–10
-4. **Batch 4 (advanced refinement)**: Sessions 11–18
-
-After Batch 1, re-check the template/tone with one learner (or your own “cold read”) before continuing.
+When you change a session `README.md` in one track, make the same change in the matching session folder in the other track.
